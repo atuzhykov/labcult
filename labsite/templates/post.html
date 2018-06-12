@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+
+    <p>Hi there!</p>
+    
+
+    {% for post in posts %}
+    <p>{{post}}</p>
+    <p>{{post.author}}</p>
+    <p>{{post.created_date}}</p>
+    <p>{{post.text}}</p>
+    <p>{{post.image.url}}</p>
+    <img src="{{ post.image.url }}" alt="">
+    
+
+
+    {% endfor %}
+    <p>It works!</p>
+
+</html>
