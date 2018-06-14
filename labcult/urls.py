@@ -24,8 +24,8 @@ from django.conf import settings
 urlpatterns = [
    
     re_path(r'^$', views.index, name='index'),
-    path('post/', views.showpost, name='showpost'),
    
+    path('enversion', views.enversion, name = 'englishversion'), 
 
     path('admin/', admin.site.urls),
  
